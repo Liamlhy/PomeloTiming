@@ -9,9 +9,9 @@ android {
         targetSdkVersion 23
         versionCode 6
         versionName "1.32b"
-        jackOptions {
-            enabled true
-        }
+//        jackOptions {
+//            enabled true
+//        }
     }
     buildTypes {
         release {

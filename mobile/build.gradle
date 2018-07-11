@@ -11,10 +11,10 @@ android {
         versionCode 6
         versionName "1.32b"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        jackOptions {
-            enabled true
-
-        }
+//        jackOptions {
+//            enabled true
+//
+//        }
         multiDexEnabled true
     }
     buildTypes {
@@ -33,7 +33,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     wearApp project(':wear')
-    compile files('src/main/java/TencentMapSDK_Raster_v_1.2.8_e45bcd0.jar')
+    gradlew assembleDebug --infocompile files ('src/main/java/TencentMapSDK_Raster_v_1.2.8_e45bcd0.jar')
+    //gradlew assembleDebug" --infocompile files('/Users/liam/Desktop/PomeloTiming/mobile/src/main/java/TencentMapSDK_Raster_v_1.2.8_e45bcd0.jar')
+    //TencentMapSDK_Raster_v_1.2.8_e45bcd0
     compile 'com.google.android.gms:play-services:7.8.87'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:multidex:1.0.1'
